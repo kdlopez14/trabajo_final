@@ -926,7 +926,13 @@ h5 {
    .box_tel, .docum{
       font-size: 20px;
    }
-
+   /*Footer*/
+   footer{
+      font-size: 15px;
+   }
+   .ciudades{
+      padding: 25px;
+   }
    /*Galería*/
    .ftoss{
       grid-template-columns: 1fr ;
