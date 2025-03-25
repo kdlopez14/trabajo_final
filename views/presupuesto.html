@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Presupuesto_Nomadix</title>
+    <link rel="stylesheet" href="../css/main.css">
+    <meta name="description"
+        content="¡Obtén un presupuesto rápido y personalizado para tu mudanza con Nomadix. Servicios de mudanza seguros, eficientes y a precios competitivos. ¡Solicita tu presupuesto online sin compromiso!">
+    <meta name="keywords" content="mudanzas nomadix, presupuesto mudanzas, mudanzas contacto">
+</head>
+
+<body>
+    <header> <!--Cabecera-->
+        <div class="head">
+            <div class="before_nav">
+                <div class="box_texto">
+                    <p>Contacta con Mudanzas Nomadix</p>
+                    <div class="img_tel"><img class="tel" src="../imagenes/b56dfabb-c759-4c91-bb49-9335d37e29b1.png"
+                            alt="contacto_icono" width="25" height="25"></div>
+                    <p> 697 435 675 </p>
+                </div>
+            </div>
+            <div class="menu_principal">
+                <div class="cont_imgs">
+                    <img class="camion" src="../imagenes/camion.png" alt="camion" width="300" height="150">
+                    <img class="logo" src="../imagenes/logo1.png" alt="logo" width="600" height="150">
+                </div>
+                <nav class="nav"> <!--Menú de navegación-->
+                    <ul class="lista_nav">
+                        <li class="menu">
+                            <a href="index.html" class="iconos_menu"><img class="wh_img"
+                                    src="../imagenes/Home-Silhouette-PNG-Image.png" alt="icono_home" width="25"
+                                    height="25"></a>
+                            <a class="enlace" href="../index.html">Home</a>
+                        </li>
+                        <li class="menu">
+                            <a href="Galeria.html" class="iconos_menu"><img class="wh_img" src="../imagenes/galeria.png"
+                                    alt="icono_galería" width="25" height="25"></a>
+                            <a class="enlace" href="Galeria.html">Galería</a>
+                        </li>
+                        <li class="menu">
+                            <a href="presupuesto.html" class="iconos_menu"><img class="wh_img"
+                                    src="../imagenes/presupuesto(2).png" alt="icono_presupuesto" width="25"
+                                    height="25"></a>
+                            <a class="indicador_pag" href="presupuesto.html">Presupuesto</a>
+                        </li>
+                        <li class="menu">
+                            <a href="contacto.html" class="iconos_menu"><img class="wh_img"
+                                    src="../imagenes/b56dfabb-c759-4c91-bb49-9335d37e29b1.png" alt="icono_contacto"
+                                    width="25" height="25"></a>
+                            <a class="enlace" href="contacto.html">Contacto</a>
+
+                        </li>
+                    </ul>
+                    <button class="menu-icon" id="menu-icon" aria-label="Abrir menú">
+                        &#9776; <!-- Símbolo de tres puntitos -->
+                    </button>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <main> <!--Cuerpo de la página web-->
+        <section><!--Imagen de Fondo-->
+            <div class="fondo_pres"></div>
+            <div class="txt_fondo txt_centro">
+                <h2 class="tit">Tu Mudanza, Nuestro Compromiso</h2>
+                <hr>
+                <p>Confía en Nomadix para hacer de tu mudanza un proceso rápido, seguro y sin estrés.<br> ¡Rellena el
+                    formulario y deja el resto en nuestras manos!</p>
+            </div>
+        </section>
+        <section>
+            <h2 class="tit">¡Solicita tu Presupuesto!</h2>
+            <div id="form_pres">
+                <form>
+                    <h3>Información de Contacto</h3>
+                    <p>Nombre completo:</p>
+                    <input class="casilla" type="text" name="nombre" placeholder="Nombre" required
+                        pattern="[A-Za-zÁÉÍÓÚáéíóúÑñ ]{2,50}">
+                    <p>Teléfono:</p>
+                    <input class="casilla" type="tel" name="teléfono" placeholder="Teléfono" required pattern="\d{9}">
+                    <p>Correo electrónico</p>
+                    <input class="casilla" type="email" name="correo" placeholder="Correo" required
+                        pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.(com|org|net|edu|gov|es|info|biz|co|us|tv)$">
+                    <h3>Detalles de la Mudanza</h3>
+                    <p>Fecha prevista para la mudanza</p>
+                    <input class="casilla" type="date" name="fecha" required min="2025-03-24">
+                    <!--al ser de tipo date no es necesario un pattern. Lo valida por sí solo. -->
+                    <p>Direción completa de origen</p>
+                    <input class="casilla" type="text" name="Dirección" placeholder="Dirección origen" required
+                        pattern="[A-Za-zÁÉÍÓÚáéíóúÑñ0-9.,\-ºª ]{5,100}">
+                    <p>Dirección completa de destino</p>
+                    <input class="casilla" type="text" name="Dirección" placeholder="Dirección destino" required
+                        pattern="[A-Za-zÁÉÍÓÚáéíóúÑñ0-9.,\-ºª ]{5,100}">
+
+                    <h3>Características de las Ubicaciones</h3>
+                    <p>Tipo de vivienda origen:</p>
+                    <input class="radio" type="radio" name="opcion" value="Casa"><span>Casa</span>
+                    <input class="radio" type="radio" name="opcion" value="Apartamento"><span>Apartamento</span>
+                    <input class="radio" type="radio" name="opcion" value="Oficina"><span>Oficina</span>
+                    <input class="radio" type="radio" name="opcion" value="Local"><span>Local</span>
+
+                    <p>Tipo de vivienda destino:</p>
+                    <input class="radio" type="radio" name="opcion2" value="Casa"><span>Casa</span>
+                    <input class="radio" type="radio" name="opcion2" value="Apartamento"><span>Apartamento</span>
+                    <input class="radio" type="radio" name="opcion2" value="Oficina"><span>Oficina</span>
+                    <input class="radio" type="radio" name="opcion2" value="Local"><span>Local</span>
+
+                    <p>Planta: </p>
+                    <input class="casilla" type="number" name="planta" placeholder="planta" required min="-2" max="100">
+                    <p>Ascensor: </p>
+                    <input class="radio" type="radio" name="ascensor" value="si"><span>Sí</span>
+                    <input class="radio" type="radio" name="ascensor" value="no"><span>No</span>
+
+                    <h3>Inventario de Bienes a Trasladar:</h3>
+                    <p>Listado de muebles y electrodomésticos principales:</p>
+                    <textarea cols="52" rows="8" name="muebles" placeholder="sofás, camas, refrigeradores, etc."
+                        required></textarea>
+                    <p>Artículos especiales: </p>
+                    <textarea cols="50" rows="5" name="Artículos especiales"
+                        placeholder="pianos, obras de arte, elementos de gran tamaño, etc."></textarea>
+                    <h3>Servicios Adicionales Requeridos:</h3>
+                    <p>Empaque y desempaque:</p>
+                    <input class="radio" type="radio" name="empaque" value="si"><span>Sí</span>
+                    <input class="radio" type="radio" name="empaque" value="no"><span>No</span>
+                    <p>Desmontaje y montaje de muebles:</p>
+                    <input class="radio" type="radio" name="Desmontaje" value="si"><span>Sí</span>
+                    <input class="radio" type="radio" name="Desmontaje" value="no"><span>No</span>
+                    <p>Almacenaje temporal: </p>
+                    <input class="radio" type="radio" name="Almacenaje" value="si"><span>Sí</span>
+                    <input class="radio" type="radio" name="Almacenaje" value="no"><span>No</span>
+
+                    <h3>Observaciones o Requerimientos Especiales:</h3>
+                    <textarea cols="50" rows="8" name="observaciones">Observaciones</textarea>
+
+                    <input class="checkbox" type="checkbox" name="Política Privacidad" value="check"><a
+                        href="#politica_priv" class="enlace_priv">Política de Privacidad</a>
+                    <div class="politica_priv" id="politica_priv">
+                        <h3>Política de Privacidad</h3>
+                        <p>Última actualización: 24/03/2025<br>
+                            En Nomadix, nos comprometemos a proteger y respetar tu privacidad. Esta Política de
+                            Privacidad
+                            explica cómo recopilamos, utilizamos, almacenamos y protegemos tus datos personales cuando
+                            accedes a nuestros servicios de mudanzas, ya sea a través de nuestro sitio web o mediante
+                            otros
+                            canales de contacto.<br>
+                            1. Información que recopilamos
+                            Recopilamos la siguiente información cuando interactúas con nuestros servicios:
+
+                            Datos personales: Nombre, dirección de correo electrónico, número de teléfono, dirección de
+                            origen y destino, tipo de vivienda, información sobre muebles o bienes a trasladar, etc.
+
+                            Datos de uso: Información sobre tu uso del sitio web, como la fecha y hora de acceso, la
+                            dirección IP, el navegador utilizado, las páginas visitadas, etc.
+
+                            Información de pago: Si contratas nuestros servicios, podemos recopilar información
+                            relacionada
+                            con el pago (como datos bancarios o de tarjeta de crédito) a través de procesadores de pagos
+                            seguros.<br>
+
+                            2. Cómo utilizamos tus datos
+                            Utilizamos tus datos personales para los siguientes fines:
+
+                            Proveer nuestros servicios de mudanza: Gestionar y procesar solicitudes de mudanza,
+                            coordinación
+                            de la mudanza y contacto con el cliente.
+
+                            Atención al cliente: Responder a tus consultas, dudas o problemas relacionados con nuestros
+                            servicios.
+
+                            Mejorar nuestros servicios: Analizar la información recopilada para mejorar la calidad de
+                            nuestros servicios y personalizar la experiencia del usuario.
+
+                            Cumplimiento legal: Cumplir con las leyes y regulaciones locales en materia de protección de
+                            datos y otros requisitos legales aplicables.<br>
+
+                            3. Protección de tus datos
+                            Tomamos medidas de seguridad razonables para proteger tus datos personales contra accesos no
+                            autorizados, alteración, divulgación o destrucción. Sin embargo, debes tener en cuenta que
+                            ningún sistema de transmisión de datos a través de Internet o almacenamiento electrónico es
+                            100%
+                            seguro.<br>
+
+                            4. Compartir tus datos
+                            Nomadix no compartirá, venderá ni alquilará tus datos personales a terceros sin tu
+                            consentimiento, salvo en los siguientes casos:
+
+                            Proveedores de servicios: Podemos compartir tus datos con proveedores de servicios externos
+                            que
+                            nos ayuden a realizar nuestros servicios, como procesadores de pagos o empresas de
+                            transporte de
+                            mudanzas. Estos proveedores estarán sujetos a acuerdos contractuales para proteger tu
+                            información.
+
+                            Cumplimiento legal: Si es necesario, podemos divulgar tus datos personales para cumplir con
+                            las
+                            leyes y regulaciones, responder a una solicitud gubernamental o proteger nuestros derechos
+                            legales.<br>
+
+                            5. Derechos sobre tus datos personales
+                            Tienes derecho a acceder, corregir, eliminar o restringir el uso de tus datos personales en
+                            cualquier momento. Si deseas ejercer alguno de estos derechos o si tienes alguna inquietud
+                            sobre
+                            cómo tratamos tus datos, puedes contactarnos a través de la información de contacto
+                            proporcionada más abajo.<br>
+
+                            6. Cookies
+                            Nuestro sitio web puede utilizar cookies para mejorar tu experiencia de navegación. Las
+                            cookies
+                            son pequeños archivos que se almacenan en tu dispositivo y que nos permiten recordar tu
+                            actividad y preferencias. Puedes configurar tu navegador para rechazar las cookies, pero
+                            esto
+                            podría afectar la funcionalidad de algunas partes de nuestro sitio web.<br>
+
+                            7. Transferencias internacionales de datos
+                            Si procesamos o almacenamos tus datos fuera de tu país de residencia, tomaremos las medidas
+                            necesarias para asegurar que tus datos personales sean tratados de acuerdo con esta política
+                            y
+                            con las leyes aplicables sobre protección de datos.<br>
+
+                            8. Enlaces a terceros
+                            Nuestro sitio web puede contener enlaces a sitios web de terceros. No nos hacemos
+                            responsables
+                            de la privacidad ni de las prácticas de seguridad de esos sitios web. Te recomendamos que
+                            leas
+                            sus políticas de privacidad antes de proporcionarles tus datos personales.<br>
+
+                            9. Modificaciones a esta Política de Privacidad
+                            Nos reservamos el derecho de modificar esta Política de Privacidad en cualquier momento. Te
+                            informaremos sobre cualquier cambio a través de la página web o mediante otros medios de
+                            contacto. Te recomendamos que revises periódicamente esta política para estar al tanto de
+                            cómo
+                            protegemos tus datos.</p>
+                    </div>
+                    <input class="send" type="submit" name="boton" value="Enviar">
+                </form>
+            </div>
+
+        </section>
+        <section><!--Seccion 7-->
+            <div class="seccion7 txt_centro">
+                <div class="fondo_info"></div>
+                <div class="contacto border20"><!--Contactar-->
+                    <h2>¿Necesitas Ayuda?</h2>
+                    <p>Llámanos gratis de lunes a viernes de 9h a 20h.<br>
+                        900 546 500 <br>
+                        O si lo prefieres te llamamos nosotros ahora</p>
+                    <form>
+                        <input type="tel" name="telefono" placeholder="Número de teléfono" class="box_tel border20"
+                            required>
+                        <input type="submit" name="boton" value="enviar" class="boton_env_tel border20">
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer> <!--Pie de página-->
+        <div class="ciudades txt_centro">
+            <div>
+                <h5>Mudanzas Nomadix</h5>
+                <a href="https://www.google.com/maps" class="direccionn">Avinguda Real de Madrid, 102, Pobles del
+                    Sud,Valencia</a>
+                <p>Mudanzas Valencia, Servios de mudanzas, Emabalaje, Transporte, Seguridad, Trabajos
+                    internacionales, Trabajos nacionales, Servicios personalizados</p>
+                <h5>OFRECEMOS SERVICIOS DE MUDANZAS EN ESPAÑA</h5>
+                <p>A coruña &#124; Albacete &#124; Alicante &#124; Almería &#124; Ávila &#124; Badajoz &#124; Barcelona
+                    &#124; Bilbao &#124; Burgos &#124; Cáceres &#124; Cádiz &#124;
+                    Castellón de la Plana &#124; Ceuta &#124; Ciudad Real &#124; Córdoba &#124; Cuenca &#124;
+                    Donostia-San Sebastián &#124; Girona &#124; Granada &#124; Guadalajara &#124;
+                    Huelva &#124; Huesca &#124; Jaén &#124; Jerez de la Frontera &#124; Gran Canaria &#124; León &#124;
+                    Lleida &#124; Logroño &#124; Lugo &#124; Madrid &#124; Málaga &#124;
+                    Melilla &#124; Murcia &#124; Ourense &#124; Oviedo &#124; Palma de Mollorca &#124; Pamplona &#124;
+                    Salamanca &#124; Tenerife &#124; Santander &#124; Valencia </p>
+            </div>
+        </div>
+
+        <div class="redes_sociales">
+            <div>
+                <ul class="documentacion"> <!--Documentación legal de la empresa-->
+                    <li><a href="documentacion.html#aviso_legal">Aviso Legal</a></li>
+                    <li><a href="documentacion.html#cond.generales">Condiciones generales de contratación</a></li>
+                    <li><a href="documentacion.html#pol.priv">Política de privacidad</a></li>
+                    <li><a href="documentacion.html#pol.cookies">Política de cookies</a></li>
+                </ul>
+            </div>
+            <div>
+                <ul class="iconos_redes"> <!--Enlaces que dirigen a las redes sociales de la empresa-->
+                    <li><a href="https://es-es.facebook.com/"><img class="icon_redes" src="../imagenes/facebook.png"
+                                alt="facebook" width="60"></a></li>
+                    <li><a href="https://www.instagram.com/"><img class="icon_redes" src="../imagenes/instagram.png"
+                                alt="Instagram" width="60"></a></li>
+                    <li><a href="https://es.linkedin.com/"><img class="icon_redes" src="../imagenes/linkedin.png"
+                                alt="Linkedin" width="60"></a></li>
+                    <li><a href="https://www.youtube.com/"><img class="icon_redes" src="../imagenes/youtube.png"
+                                alt="Youtube" width="60"></a></li>
+                </ul>
+            </div>
+        </div>
+
+    </footer>
+    <script src="../js/script.js"></script>
+</body>
+
+</html>
