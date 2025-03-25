@@ -836,6 +836,7 @@ h5 {
       width: 100%;
       font-size: 15px;
    }
+  
    /*Ocultamos la parte de arriba del menú de navegación*/
    .before_nav{
      display: none;
