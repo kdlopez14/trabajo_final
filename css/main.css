@@ -91,6 +91,11 @@ hr {
 footer {
    background-color: #464343;
 }
+.img_tel{
+   width: 25px;
+   height: 25px;
+}
+
 /*Before-nav*/
 .box_texto {
    display: flex;
@@ -663,16 +668,16 @@ h5 {
 }
 /*Seccion 4 Empleados */
 .gal_sec4{
-   width: 80%;
+   width: 90%;
    margin: 100px auto;
    display: grid;
-   grid-template-columns: auto auto auto auto auto;
-   
+   grid-template-columns: 20% 20% 20% 20% 20%;
 }
 .gal_sec4 img{
    width: 100%;
-   clip-path: circle(40%);
-   margin-bottom: 20px;
+   height: 100%;
+   clip-path: circle(35%);
+   object-fit: contain;
 }
 
 /*Página Contacto*/
@@ -685,9 +690,12 @@ h5 {
    gap: 50px;
    line-height: 35px;
 }
-.lista_contacto div img{
-   width: 15%;
+.lista_contacto img{
+   width: 30%;
+   height: 40%;
+   object-fit: contain;
 }
+
 .negrita{
    font-weight: bold;
 }
