@@ -964,7 +964,7 @@ h5 {
       width: 50%;
       grid-template-columns: 1fr;
       grid-template-rows: auto auto auto auto auto;
-      gap: 20px;
+      gap: 50px;
    }
    .gal_sec3 ul li button{
       font-size: 18px;
